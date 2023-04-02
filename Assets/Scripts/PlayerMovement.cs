@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float movementSpeed = 5f;
     private float moveInput = 0;
-    private float jumpForce = 15f;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float jumpForce = 15f;
 
     private SpriteRenderer sprite;
     private Rigidbody2D rb;
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * movementSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
         if (Input.GetButtonDown("Jump"))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
