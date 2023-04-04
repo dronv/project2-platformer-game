@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Useable for any gameObject moving between 2+ Waypoints
 public class WaypointFollower : MonoBehaviour
 {
     [SerializeField] private GameObject[] waypoints;

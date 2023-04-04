@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//make camera automatically follow player
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform player;

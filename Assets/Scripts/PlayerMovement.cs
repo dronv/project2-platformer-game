@@ -6,9 +6,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//handles all Player movement
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float moveSpeed = 15f;
     [SerializeField] private float jumpForce = 15f;
     [SerializeField] private LayerMask jumpableGround;
     private float movementInput = 0;
@@ -19,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     private enum MovementState { _idle, _run, _jump, _fall };
-    // Start is called before the first frame update 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    // Player animation based on state(_idle, _run, _jump, _fall)
     private void updateAnimationState()
     {
         MovementState movementState;
@@ -73,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Player needs to touch the ground before beeing able to jump again
+    // TODO : Doublejump
     private bool IsGrounded()
     {
         return Physics2D.BoxCast(col.bounds.center, col.bounds.size, 0f, Vector2.down, .1f, jumpableGround);

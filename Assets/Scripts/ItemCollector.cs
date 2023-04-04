@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// picing up collctibles (for now just keys)
+// TODO : PowerUps/Healpotions
 public class ItemCollector : MonoBehaviour
 {
     private int collected_keys = 0;
