@@ -18249,10 +18249,19 @@ PrefabInstance:
       propertyPath: collectedKeysText
       value: 
       objectReference: {fileID: 1107147720}
+    - target: {fileID: 9082675827140132146, guid: d9862f1b96ba5fb49b71259cc5ff79a7, type: 3}
+      propertyPath: collect_keys_sound
+      value: 
+      objectReference: {fileID: 8204068996487906383}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9862f1b96ba5fb49b71259cc5ff79a7, type: 3}
 --- !u!4 &8204068996487906379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1991506757904081240, guid: d9862f1b96ba5fb49b71259cc5ff79a7, type: 3}
+  m_PrefabInstance: {fileID: 7672433444409615635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8204068996487906383 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7672433445205080184, guid: d9862f1b96ba5fb49b71259cc5ff79a7, type: 3}
   m_PrefabInstance: {fileID: 7672433444409615635}
   m_PrefabAsset: {fileID: 0}
