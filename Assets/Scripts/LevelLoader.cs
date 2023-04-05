@@ -16,17 +16,10 @@ public class LevelLoader : MonoBehaviour
             Invoke("LoadNextLevel", 1f);
             
         }
+    }
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-    }
-
-    private void LoadNextLevel()
-    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-        yield return new WaitForSeconds(2);
-
-        SceneManager.LoadScene(level_index);
     }
+
 }
