@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(movementInput * moveSpeed, rb.velocity.y);
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+
+            jumping_sound.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
         updateAnimationState();
@@ -64,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
         // check for 'jump' input with tolerance
         if (rb.velocity.y > .1f)
         {
-            jumping_sound.Play();
             movementState = MovementState._jump;
         }
         else if (rb.velocity.y < -.1f)

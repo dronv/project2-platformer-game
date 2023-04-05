@@ -11,11 +11,13 @@ public class ItemCollector : MonoBehaviour
     private int collected_keys = 0;
 
     [SerializeField] private TextMeshProUGUI collectedKeysText;
+    [SerializeField] public AudioSource collect_keys_sound;
 
     private void OnTriggerEnter2D(Collider2D collison)
     {
         if(collison.gameObject.CompareTag("Key"))
-        {
+        {   
+            collect_keys_sound.Play();
             Destroy(collison.gameObject);
             collected_keys +=1;
 
