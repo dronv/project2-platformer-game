@@ -5,12 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-
+    public Animator transition;
     private void OnTriggerEnter2D(Collider2D collison)
     {
         if (collison.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            LoadNextLevel();
         }
+    }
+
+    public void LoadNextLevel()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    IEnumerator LoadLevel(int level_index)
+    {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(2);
+
+        SceneManager.LoadScene(level_index);
     }
 }
