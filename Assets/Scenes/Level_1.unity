@@ -321,7 +321,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2230062796233072240, guid: 95b6af88b20963448aec2cb241f4c690, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2230062796233072240, guid: 95b6af88b20963448aec2cb241f4c690, type: 3}
       propertyPath: m_LocalPosition.x
@@ -421,8 +421,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -65, y: -23}
-  m_SizeDelta: {x: 120.0015, y: 34.4765}
+  m_AnchoredPosition: {x: -189, y: -37}
+  m_SizeDelta: {x: 398.6634, y: 34.4765}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238163374
 MonoBehaviour:
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Keys: 0'
+  m_text: 'Keys: 0/3'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -471,8 +471,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1720,7 +1720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6653529054215455239, guid: 4d638baaef11cf4438e445b5c41d3951, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6653529054215455239, guid: 4d638baaef11cf4438e445b5c41d3951, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83430,7 +83430,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8204068997301262627, guid: 2c36cab4684fecc4c9ccc53537690a03, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8204068997301262627, guid: 2c36cab4684fecc4c9ccc53537690a03, type: 3}
       propertyPath: m_LocalPosition.x

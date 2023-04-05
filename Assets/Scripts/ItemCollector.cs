@@ -19,6 +19,7 @@ public class ItemCollector : MonoBehaviour
             Destroy(collison.gameObject);
             collected_keys +=1;
 
-            collectedKeysText.text = "Keys " + collected_keys;        }
+            collectedKeysText.text = "Keys " + collected_keys + "/3";
+            }
     }
 }
