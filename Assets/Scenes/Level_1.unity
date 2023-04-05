@@ -82361,9 +82361,9 @@ Tilemap:
     m_Data: {r: 3.3387e-41, g: 3.3387e-41, b: 3.3387e-41, a: 3.3387e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -38, y: -12, z: 0}
-  m_Size: {x: 238, y: 31, z: 1}
+  m_Color: {r: 1, g: 0.98742133, b: 0.98742133, a: 1}
+  m_Origin: {x: -31, y: -8, z: 0}
+  m_Size: {x: 117, y: 20, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -82385,6 +82385,8 @@ Tilemap:
     e33: 1
 --- !u!66 &1984500684
 CompositeCollider2D:
+--- !u!1001 &8564386288580164481
+PrefabInstance:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
