@@ -1,6 +1,4 @@
 using System.Xml.Serialization;
-using System.Runtime.CompilerServices;
-using System.IO.Pipes;
 
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +8,7 @@ using UnityEngine.SceneManagement;
 //handles all Player movement
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 15f;
+    [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float jumpForce = 15f;
     [SerializeField] private LayerMask jumpableGround;
     private float movementInput = 0;
