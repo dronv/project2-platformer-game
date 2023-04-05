@@ -3,30 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+//TODO: uncomment sound code once audio file exists
 public class LevelLoader : MonoBehaviour
 {
-    public Animator transition;
+    // private AudioSource finishSound;
 
     
     public void OnTriggerEnter2D(Collider2D collison)
     {
         if (collison.gameObject.CompareTag("Player"))
         {
-            LoadNextLevel();
+            // finishSound.Play();
+            Invoke("LoadNextLevel", 1f);
+            
         }
     }
-
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    IEnumerator LoadLevel(int level_index)
-    {
-        transition.SetTrigger("Start");
-
-        yield return new WaitForSeconds(2);
-
-        SceneManager.LoadScene(level_index);
-    }
 }

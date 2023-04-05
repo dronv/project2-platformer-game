@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: swinging_axe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 54
+        height: 32
+      alignment: 9
+      pivot: {x: 0.9210528, y: 0.5098685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9604f2e084e7884c937487b5ce6e94e
+      internalID: -161644512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging_axe_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 15
+        width: 44
+        height: 45
+      alignment: 9
+      pivot: {x: 0.90909123, y: 0.9350879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0904caca24896a4a927e11f3b8e6f2e
+      internalID: -214705878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging_axe_2
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 6
+        width: 31
+        height: 54
+      alignment: 9
+      pivot: {x: 0.28607965, y: 0.93274885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ddf16021c603e4699d10103f842299
+      internalID: -277065431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging_axe_3
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 6
+        width: 32
+        height: 54
+      alignment: 9
+      pivot: {x: 0.4802637, y: 0.93274873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7142a37a509c06e4bbb85618b09c0160
+      internalID: -1863989246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging_axe_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 6
+        width: 32
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5394745, y: 0.93274873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62af7b6f709a8d7479759c4f87a84bae
+      internalID: -244166750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging_axe_5
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 6
+        width: 32
+        height: 54
+      alignment: 9
+      pivot: {x: 0.49013233, y: 0.9269008}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278d4858057fb5d4694732d11679638e
+      internalID: -956101355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +252,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      swinging_axe_0: -161644512
+      swinging_axe_1: -214705878
+      swinging_axe_2: -277065431
+      swinging_axe_3: -1863989246
+      swinging_axe_4: -244166750
+      swinging_axe_5: -956101355
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

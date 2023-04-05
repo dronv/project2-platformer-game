@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+// handle Player death
+// TODO  multiple lives
 public class PlayerLife : MonoBehaviour
 {
 

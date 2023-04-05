@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+// picing up collctibles (for now just keys)
+// TODO : PowerUps/Healpotions
 public class ItemCollector : MonoBehaviour
 {
     private int collected_keys = 0;
@@ -17,6 +19,7 @@ public class ItemCollector : MonoBehaviour
             Destroy(collison.gameObject);
             collected_keys +=1;
 
-            collectedKeysText.text = "Keys " + collected_keys;        }
+            collectedKeysText.text = "Keys " + collected_keys + "/3";
+            }
     }
 }
