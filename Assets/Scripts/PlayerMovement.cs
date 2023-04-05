@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 //handles all Player movement
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 10f;
-    [SerializeField] private float jumpForce = 15f;
+    [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float jumpForce = 12f;
     [SerializeField] private LayerMask jumpableGround;
     private float movementInput = 0;
 
