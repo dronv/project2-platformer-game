@@ -369,23 +369,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95b6af88b20963448aec2cb241f4c690, type: 3}
---- !u!1 &165068523 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2230062796233072252, guid: 95b6af88b20963448aec2cb241f4c690, type: 3}
-  m_PrefabInstance: {fileID: 165068522}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &165068524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165068523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0151370619fca1f47a5ba3c8354798d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &238163372
 GameObject:
   m_ObjectHideFlags: 0
@@ -8839,9 +8822,10 @@ Tilemap:
       m_AllTileFlags: 1073741825
   - first: {x: 185, y: -6, z: 0}
     second:
+  - component: {fileID: 340794369}
       serializedVersion: 2
       m_TileIndex: 12
-      m_TileSpriteIndex: 12
+  jumping_sound: {fileID: 340794369}
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8849,6 +8833,102 @@ Tilemap:
       m_AllTileFlags: 1073741825
   - first: {x: 186, y: -6, z: 0}
     second:
+--- !u!82 &340794369
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340794360}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 40861c61e79c23e429b1175232a62bfa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
       serializedVersion: 2
       m_TileIndex: 13
       m_TileSpriteIndex: 13
@@ -8898,6 +8978,7 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 191, y: -6, z: 0}
+  transition: {fileID: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 14
@@ -82385,8 +82466,6 @@ Tilemap:
     e33: 1
 --- !u!66 &1984500684
 CompositeCollider2D:
---- !u!1001 &8564386288580164481
-PrefabInstance:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -82410,10 +82489,10 @@ PrefabInstance:
       - X: -250000000
         Y: -30000000
       - X: -250000000
-        Y: 180000000
-      - X: -380000000
-        Y: 180000000
-      - X: -380000000
+        Y: 160000000
+      - X: -320000000
+        Y: 160000000
+      - X: -320000000
         Y: -80000000
       - X: -40000000
         Y: -80000000
@@ -82473,9 +82552,9 @@ PrefabInstance:
         Y: -70000000
       - X: 520000000
         Y: -80000000
-      - X: 1320000000
+      - X: 960000000
         Y: -80000000
-      - X: 1320000000
+      - X: 960000000
         Y: 0
       - X: 950000000
         Y: 0
@@ -82488,84 +82567,6 @@ PrefabInstance:
       - X: 960000000
         Y: 76250000
       - X: 960000000
-        Y: 75625000
-      - X: 979374976
-        Y: 75625000
-      - X: 980000000
-        Y: 76250000
-      - X: 980625024
-        Y: 75625000
-      - X: 989374976
-        Y: 75625000
-      - X: 990000000
-        Y: 76250000
-      - X: 990000000
-        Y: 75625000
-      - X: 1009374976
-        Y: 75625000
-      - X: 1010000000
-        Y: 76250000
-      - X: 1010625024
-        Y: 75625000
-      - X: 1019374976
-        Y: 75625000
-      - X: 1020000000
-        Y: 76250000
-      - X: 1020000000
-        Y: 75625000
-      - X: 1039374976
-        Y: 75625000
-      - X: 1040000000
-        Y: 76250000
-      - X: 1040625024
-        Y: 75625000
-      - X: 1049374976
-        Y: 75625000
-      - X: 1050000000
-        Y: 76250000
-      - X: 1050000000
-        Y: 75625000
-      - X: 1069374976
-        Y: 75625000
-      - X: 1070000000
-        Y: 76250000
-      - X: 1070625024
-        Y: 75625000
-      - X: 1079374976
-        Y: 75625000
-      - X: 1080000000
-        Y: 76250000
-      - X: 1080000000
-        Y: 75625000
-      - X: 1090000000
-        Y: 75625000
-      - X: 1090000000
-        Y: 30000000
-      - X: 1060000000
-        Y: 30000000
-      - X: 1060000000
-        Y: 26250000
-      - X: 1060625024
-        Y: 25625000
-      - X: 1069374976
-        Y: 25625000
-      - X: 1070000000
-        Y: 26250000
-      - X: 1070000000
-        Y: 25625000
-      - X: 1089374976
-        Y: 25625000
-      - X: 1090000000
-        Y: 26250000
-      - X: 1090000000
-        Y: 20000000
-      - X: 1093750016
-        Y: 20000000
-      - X: 1094375040
-        Y: 20625000
-      - X: 1094375040
-        Y: 79375000
-      - X: 1093750016
         Y: 80000000
       - X: 910000000
         Y: 80000000
@@ -82641,65 +82642,13 @@ PrefabInstance:
         Y: 60000000
       - X: 710000000
         Y: 60000000
-    - - X: 1940000000
-        Y: 0
-      - X: 1660000000
-        Y: 0
-      - X: 1660000000
-        Y: 70000000
-      - X: 1650000000
-        Y: 70000000
-      - X: 1650000000
-        Y: 60000000
-      - X: 1640000000
-        Y: 60000000
-      - X: 1640000000
-        Y: 50000000
-      - X: 1630000000
-        Y: 50000000
-      - X: 1630000000
+    - - X: 740000000
         Y: 40000000
-      - X: 1620000000
+      - X: 720000000
         Y: 40000000
-      - X: 1620000000
+      - X: 720000000
         Y: 30000000
-      - X: 1610000000
-        Y: 30000000
-      - X: 1610000000
-        Y: 20000000
-      - X: 1600000000
-        Y: 20000000
-      - X: 1600000000
-        Y: 10000000
-      - X: 1590000000
-        Y: 10000000
-      - X: 1590000000
-        Y: 0
-      - X: 1480000000
-        Y: 0
-      - X: 1480000000
-        Y: 10000000
-      - X: 1450000000
-        Y: 10000000
-      - X: 1450000000
-        Y: 20000000
-      - X: 1410000000
-        Y: 20000000
-      - X: 1410000000
-        Y: 0
-      - X: 1360000000
-        Y: 0
-      - X: 1360000000
-        Y: -80000000
-      - X: 1940000000
-        Y: -80000000
-    - - X: 0
-        Y: 40000000
-      - X: -50000000
-        Y: 40000000
-      - X: -50000000
-        Y: 30000000
-      - X: 0
+      - X: 740000000
         Y: 30000000
     - - X: 790000000
         Y: 40000000
@@ -82709,13 +82658,13 @@ PrefabInstance:
         Y: 30000000
       - X: 790000000
         Y: 30000000
-    - - X: 740000000
+    - - X: 0
         Y: 40000000
-      - X: 720000000
+      - X: -50000000
         Y: 40000000
-      - X: 720000000
+      - X: -50000000
         Y: 30000000
-      - X: 740000000
+      - X: 0
         Y: 30000000
     - - X: 50000000
         Y: 30000000
@@ -82754,9 +82703,9 @@ PrefabInstance:
     - - {x: -4.000029, y: -8}
       - {x: -4.000029, y: -3}
       - {x: -25, y: -2.9999707}
-      - {x: -25.000029, y: 18}
-      - {x: -38, y: 17.999971}
-      - {x: -37.999973, y: -8}
+      - {x: -25.000029, y: 16}
+      - {x: -32, y: 15.999971}
+      - {x: -31.999971, y: -8}
     - - {x: 21.999971, y: -8}
       - {x: 22.000063, y: 0.6249382}
       - {x: 22.062511, y: 0.5625}
@@ -82786,53 +82735,14 @@ PrefabInstance:
       - {x: 34.00003, y: -7}
       - {x: 52, y: -7.0000296}
       - {x: 52.00003, y: -8}
-      - {x: 132, y: -7.9999704}
-      - {x: 131.99997, y: 0}
+      - {x: 96, y: -7.9999704}
+      - {x: 95.99997, y: 0}
       - {x: 95, y: 0.0000294}
       - {x: 95.00007, y: 7.6249385}
       - {x: 95.062515, y: 7.5625}
       - {x: 95.93751, y: 7.562507}
-      - {x: 96, y: 7.6249127}
-      - {x: 96.00003, y: 7.5625}
-      - {x: 97.93751, y: 7.562507}
-      - {x: 98.00002, y: 7.6249795}
-      - {x: 98.062515, y: 7.5625}
-      - {x: 98.93751, y: 7.562507}
-      - {x: 99, y: 7.6249127}
-      - {x: 99.00003, y: 7.5625}
-      - {x: 100.93751, y: 7.562507}
-      - {x: 101.00002, y: 7.6249795}
-      - {x: 101.062515, y: 7.5625}
-      - {x: 101.93751, y: 7.562507}
-      - {x: 102, y: 7.6249127}
-      - {x: 102.00003, y: 7.5625}
-      - {x: 103.93751, y: 7.562507}
-      - {x: 104.00002, y: 7.6249795}
-      - {x: 104.062515, y: 7.5625}
-      - {x: 104.93751, y: 7.562507}
-      - {x: 105, y: 7.6249127}
-      - {x: 105.00003, y: 7.5625}
-      - {x: 106.93751, y: 7.562507}
-      - {x: 107.00002, y: 7.6249795}
-      - {x: 107.062515, y: 7.5625}
-      - {x: 107.937515, y: 7.562507}
-      - {x: 108, y: 7.6249127}
-      - {x: 108.00003, y: 7.5625}
-      - {x: 109, y: 7.5624704}
-      - {x: 108.99998, y: 3}
-      - {x: 106, y: 2.999971}
-      - {x: 106.00001, y: 2.6249924}
-      - {x: 106.062515, y: 2.5625}
-      - {x: 106.93751, y: 2.5625076}
-      - {x: 107, y: 2.6249127}
-      - {x: 107.00003, y: 2.5625}
-      - {x: 108.937515, y: 2.5625076}
-      - {x: 109, y: 2.6249127}
-      - {x: 109.00003, y: 2}
-      - {x: 109.375015, y: 2.0000076}
-      - {x: 109.43751, y: 2.0625107}
-      - {x: 109.43749, y: 7.937507}
-      - {x: 109.37499, y: 8}
+      - {x: 96, y: 7.6250114}
+      - {x: 95.99997, y: 8}
       - {x: 91, y: 7.9999704}
       - {x: 90.99997, y: 5}
       - {x: 84, y: 4.999971}
@@ -82869,44 +82779,18 @@ PrefabInstance:
       - {x: 70.99997, y: 7}
       - {x: 69, y: 6.9999704}
       - {x: 69.00003, y: 6}
-    - - {x: 193.99997, y: -8}
-      - {x: 193.99997, y: 0}
-      - {x: 166, y: 0.0000294}
-      - {x: 165.99997, y: 7}
-      - {x: 165, y: 6.9999704}
-      - {x: 164.99997, y: 6}
-      - {x: 164, y: 5.999971}
-      - {x: 163.99997, y: 5}
-      - {x: 163, y: 4.999971}
-      - {x: 162.99997, y: 4}
-      - {x: 162, y: 3.999971}
-      - {x: 161.99997, y: 3}
-      - {x: 161, y: 2.999971}
-      - {x: 160.99997, y: 2}
-      - {x: 160, y: 1.9999708}
-      - {x: 159.99997, y: 1}
-      - {x: 159, y: 0.99997073}
-      - {x: 158.99997, y: 0}
-      - {x: 148, y: 0.0000294}
-      - {x: 147.99997, y: 1}
-      - {x: 145, y: 1.0000294}
-      - {x: 144.99997, y: 2}
-      - {x: 141, y: 1.9999708}
-      - {x: 140.99997, y: 0}
-      - {x: 136, y: -0.000029300001}
-      - {x: 136.00003, y: -8}
     - - {x: -0.000029300001, y: 3}
       - {x: -0.000029300001, y: 4}
       - {x: -5, y: 3.999971}
       - {x: -4.999971, y: 3}
-    - - {x: 73.99997, y: 3}
-      - {x: 73.99997, y: 4}
-      - {x: 72, y: 3.999971}
-      - {x: 72.00003, y: 3}
     - - {x: 78.99997, y: 3}
       - {x: 78.99997, y: 4}
       - {x: 77, y: 3.999971}
       - {x: 77.00003, y: 3}
+    - - {x: 73.99997, y: 3}
+      - {x: 73.99997, y: 4}
+      - {x: 72, y: 3.999971}
+      - {x: 72.00003, y: 3}
     - - {x: 4.999971, y: 2}
       - {x: 4.999971, y: 3}
       - {x: 2, y: 2.999971}
