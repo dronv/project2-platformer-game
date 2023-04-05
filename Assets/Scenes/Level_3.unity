@@ -569,8 +569,17 @@ PrefabInstance:
       propertyPath: collectedKeysText
       value: 
       objectReference: {fileID: 283999530}
+    - target: {fileID: 9082675827140132146, guid: d9862f1b96ba5fb49b71259cc5ff79a7, type: 3}
+      propertyPath: collect_keys_sound
+      value: 
+      objectReference: {fileID: 136738038}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9862f1b96ba5fb49b71259cc5ff79a7, type: 3}
+--- !u!82 &136738038 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7672433445205080184, guid: d9862f1b96ba5fb49b71259cc5ff79a7, type: 3}
+  m_PrefabInstance: {fileID: 136738037}
+  m_PrefabAsset: {fileID: 0}
 --- !u!213 &158864871
 Sprite:
   m_ObjectHideFlags: 0
