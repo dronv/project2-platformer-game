@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     private enum MovementState { _idle, _run, _jump, _fall };
+    [SerializeField] private AudioSource jumping_sound;
     // Start is called before the first frame update 
     void Start()
     {
@@ -64,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
         // check for 'jump' input with tolerance
         if (rb.velocity.y > .1f)
         {
+            jumping_sound.Play();
             movementState = MovementState._jump;
         }
         else if (rb.velocity.y < -.1f)

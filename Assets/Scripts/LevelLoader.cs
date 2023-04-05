@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
-    private void OnTriggerEnter2D(Collider2D collison)
+
+    
+    public void OnTriggerEnter2D(Collider2D collison)
     {
         if (collison.gameObject.CompareTag("Player"))
         {
